@@ -1,3 +1,113 @@
+### Openfield todolist
+* premier playtest d'ici la fin de la semaine
+* intégrer le timer
+* intégrer le billboard
+* packager via WebGL
+
+### Doors todolist
+* entamer la shortlist
+* créer la première scène (outre la scène test)
+* déterminer un fil narratif
+
+## 10.0 10/19/17 19:44
+
+LONGUE journée de gossage sur Github. Merci à Saint-Julian, j'ai arrangé mes problèmes (en grande partie reliés à mon .gitignore) et je peux me lancer le coeur léger sur mes protos.
+
+Aujourd'hui a essentiellement été une journée de mise-à-niveau sur C# et de tutoriaux sur internet. J'ai maintenant un menu fonctionnel et des transitions smooth entre deux scènes et un menu.
+![image](doormenu01.PNG)
+
+## 9.0 10/19/17 11:00
+
+### DOORS SHORTLIST
+
+**push n' pull**
+* une porte devant, une porte derrière. L'ouverture de la porte dépend de la position du joueur.
+* plus le joueur s'approche d'une porte, plus celle-ci se ferme. Plus il s'éloigne, plus elle s'ouvre.
+
+**fausses portes**
+* [4] portes fermées. Toutes sauf cachent un mur de briques.
+* un seul bon choix est disponible, mais aucun indice n'est fourni.
+
+**lookat**
+* la porte est ouverte seulement quand le joueur ne la regarde pas.
+* inversement: la porte est fermée seulement quand le joueur ne la regarde pas.
+
+**noclip**
+* la porte est constamment fermée
+* elle perd sa collision quand le joueur ne la regarde pas
+* le joueur peut ainsi passer à travers à reculons
+
+**portails 1**
+* plusieurs portes donnent à différentes destinations
+* exemple: une porte donne vers un paysage ensoleillé, une autre vers un paysage marécageux
+
+**portails 2**
+* plusieurs portes ramènent à d'autres portes
+* résultat: labyrinthe
+
+**barricades**
+* portes barrées, barricadées, booby-trappées
+
+**coercion**
+* Ordonner au joueur une décision. Le choix est entre les mains du joueur.
+* "Stanley took the door on the left"
+
+**taille**
+* différentes portes de différentes formes
+
+**patience**
+* porte barrée. elle ne s'ouvre que lorsque le joueur abandonne
+* abandon: sortir de la salle? ouvrir le menu?
+
+**contrôles hackés**
+* choix simple et direct offert.
+* les contrôles sont déréglés.
+* exemple: le input pour aller devant fait maintenant reculer
+
+**innaccessible**
+* la porte est ouverte, mais innaccessible
+
+## 8.0 10/18/17 18:44
+
+J'ai recommencé tantôt la scène de mon open field. Étant donné que j'ai dû tout recommencer, j'ai fait quelques modifs sur cette nouvelle version.
+
+Version 1.0
+![image](top00.png)
+
+Version 1.1
+![image](top01.PNG)
+
+Si je fais le jeu des différences vite vite, l'échelle a changé à plusieurs endroits.
+* J'ai enlevé les montagnes à l'horizon. Je préfère une horizon fixe à hauteur des yeux
+* La forêt s'est transformée en labyrinthe. Au lieu d'en faire un chemin droit, je plutôt faire un dédale
+* la falaise est vraiment, _vraiment_ collée sur le spawn. Genre quelques pas en arrière et c'est la chute.
+* J'ai encore une rivière plus délimiter la forêt. Plus mince. Je la mettrai peut-être plutôt du côté de la montagne, pour ainsi mettre l'emphase sur la lisière dense de la forêt.
+
+Vue de la montagne à partir du spawn. Au sommet se trouverait une structure, ou autre dominant avec un visuel catchy.
+![image](mountain01.PNG)
+
+Vue de la forêt à partir du spawn. J'ai présentement deux entrées différentes.
+![image](forest01.PNG)
+
+Mes questionnements:
+* Plus j'avance dans ce projet, plus je cherche à restreindre et clarifier la quantité de choix disponible à tout moment. Idéalement, ça devrait constamment être binaire. Avoir quatre directions différentes du début est peut-être trop.
+* Et si je faisais une version avec rien devant, rien derrière, et seulement la forêt / montagne comme choix?
+* Chaque direction devrait représenter quelque chose, et ce "quelque chose" devra être représenté quelque part entre la navigation du joueur et son processus de choix.
+
+
+## 7.0 10/18/17 16:27
+
+J'ai ma première scène fonctionelle pour Portes.
+![image](door01.png)
+
+Le code est smooth, et flexible (importé via le package DoorsPro sur le assetstore). Je devrais facilement pouvoir itérer mes différentes idées à partir de ça.
+
+Je vais devoir trouver un meilleur default size pour la salle à deux portes. Je devrai faire plusieurs tests d'échelle.
+
+Aussi, mon legokit SUCK. Faut je trouve des alternatives. Pas chères. Genre vraiment pas chères.
+
+
+
 ## 6.0 10/16/17
 
 Aujourd'hui m'est arrivée une plaie que j'avais depuis longtemps prise comme était chose du passé. J'ai eu un gitfuck et j'ai perdu une journée de travail. Ça inclut la map et toute les images documentant mon travail. Je dois définitivement prendre du temps pour lire de la doc sur git et mieux comprendre ses rouages, parce que c'est la plus cruelle ironie que je perde tout mon travail en utilisant du version control.
@@ -14,19 +124,27 @@ Je vais garder ce concept, à l'exception de rattacher un contexte à chaque sit
 
 Le jeu consistera en une série de vignettes séparées en scènes, chacune rattachée à une "expérience" différente.
 
-Je n'ai pas encore de définition exacte d'"expérience", pour l'instant ça se décortique soit en mots-clé, genre:
+Je n'ai pas encore de définition exacte d'"expérience", pour l'instant ça se décortique en un brainstorm de mots-clé, genre:
 * patience
-* asdf
+* exclusivité
+* push & pull
+* i need space
+* m'aimes-tu?
+* greener pastures
 
-J'aurais peut-être envie d'arriver à quelque chose de plus "flavored" et surtout plus québécois.
+C'est vraiment désorganisé, et je n'ai pas de ligne directrice pour l'instant. Looking forward, j'aimerais trouver ce fil conducteur, qui idéalement aura un vibe "québécois". Donc peut-être une liste d'expressions locales?
+
+Pour les idées de mécaniques, j'ai sketché toutes sortes de situations. Certaines sont déjà rattachées à une émotion / phrase / expérience, d'autres sont juste encore au stade d'idée.
 
 ![image](p01.jpg)
 
-
 ![image](p02.jpg)
 
-## 5.0 - 11/10/17
+La prochaine étape sera de faire une shortlist de ces idées.
 
+Autre piste de réflexion: comment est-ce que je wrap le tout?  Une liste de keywords affichée sur un menu? Une succession linéaire avec une certaine trame narrative?
+
+## 5.0 - 11/10/17
 Après une lourde semaine de lecture / écriture derrière moi, j'ai embarqué dans Unity.
 
 Toujours commencer par l'échelle macro. Dans ce cas, je devais m'assurer que l'espace navigable en l'espace d'une minute était assez restreint, tout en donnant une impression d'immensité. Les obélisques bleus me servent de guides.
@@ -164,7 +282,7 @@ Le concept est encore plus simple. Le jeu n'a aucun _branching_; chaque choix ne
 Fun fact: tous mes playtesters pensaient que leur choix avaient des conséquences sur le outcome du jeu. L'illusion du choix est quelque chose de puissant.
 
 Ça me ramène à Mountain, qui permet un input au début du jeu, mais qui ne sert ultimement à rien. On s'imagine juste que tout se passe "dans la simulation".
-![image](mountain01.png)
+![image](mountaingame.png)
 
 Pour en revenir à mon idée de jeu, je suis un peu embêté, et je me sens bloqué.
 ![image](proto01_02.png)
