@@ -1,13 +1,33 @@
-### Openfield todolist
-* premier playtest d'ici la fin de la semaine
-* intégrer le timer
-* intégrer le billboard
-* packager via WebGL
 
-### Doors todolist
-* entamer la shortlist
-* créer la première scène (outre la scène test)
-* déterminer un fil narratif
+## 11.0 27/10/17 19:21
+
+Une nouvelle semaine qui se passe sans que je puisse donner un peu d'amour à ce journal. La recherche-création en parallèle avec un BFA est pesante; mes semaines passent avec cette envie qui décolle pas de pouvoir me pencher sur mes jeux, avec une tête claire et des idées plein les doigts.
+
+Plusieurs update majeurs:
+
+* **Je mets momentanément le projet Doors de côté pour me concentrer sur Openfield.** J'ai fait avancer ces projets en parallèle pour savoir lequel valait la peine d'être approfondi en priorité. J'ai notamment fait ce choix vu que j'ai du mal à trouver un fil conducteur intéressant pour Doors et que la tâche au niveau scripting s'avérait plus ardue. Openfield avancera plus vite à partir de maintenant.
+
+* **Openfield est fonctionnel et jouable.** J'ai créé une build lundi avec laquelle j'ai pu faire un peu de playtest. C'est possible d'y jouer [http://saboudreault.ca/jeux/of/index.html](ici).
+
+Ces quelques playtests m'ont amené à quelques réflexions.
+
+**60 secondes pour jouer, c'est intense.** Dans tous mes playtests initiaux, le joueur a rapidement paniqué et s'est engagé dans la première avenue disponible.
+
+J'ai trouvé ce réflexe problématique car les choix effectués à ce moment étaient au hasard. Je rappelle que le but de ce jeu est de donner un reflet de celui ou celle qui y joue à partir de ses réflexes les plus naturels. Le timer donne un poids à ce choix: ton temps est limité, tu ne peux pas tout faire, alors sers-toi en à bon escient.
+
+Ça m'a mené à me poser la question **et si le timer avançait seulement quand le joueur avançait?**
+
+J'ai récemment joué à _Lullaby for a Heartsick Spacer_. Quelle belle gemme. Dans le jeu, on se promène dans une grotte et on y choisit un endroit où dormir. C'est tout. Tout comme _Orchids to Dusk_, cette invitation à s'arrêter et ne rien faire m'a frappé. Ne rien faire est une des choses les plus contre-intuitives que je peux imaginer dans un jeu vidéo.
+
+Ne rien faire fit quand même avec mon idée. Bien que contre-intuitif, c'est un choix qui est possible, et j'aimerais pouvoir lui donner plus de place dans ce jeu. J'ai donc pris une partie de la journée à scripter un timer qui n'avance pas si le joueur reste immobile. Après un nouveau playtest, j'ai pu voir un changement dans la dynamique du jeu.
+
+La pression de temps devient tout de suite une situation moins urgente et stressante, mais garde quand même l'aspect "précieux" du temps imparti.
+
+J'aime ça. C'est dur de ne rien faire, et je peux en témoigner quelque chose. Je fais des retraites de méditation depuis quelques années, et rester assis sur mon cul les yeux fermés à observer ma respiration toute la journée reste un des challenges les plus difficiles que j'ai pu entreprendre. Ne rien faire distortionne le temps. L'ennui c'est la conscience du temps.
+
+Tu t'arrêtes pour stopper le timer, mais tu veux tout de suite repartir. Sprinter. Tu veux voir la suite, tu veux te rendre au sommet, tu veux trouver ce que tu cherches, tu veux compléter ce que d'autres n'ont pas pu.
+
+S'arrêter est la solution à ce jeu qui délaisse néammoins le joueur sur une tension qui ne se résoud pas.
 
 ## 10.0 10/19/17 19:44
 
@@ -16,7 +36,7 @@ LONGUE journée de gossage sur Github. Merci à Saint-Julian, j'ai arrangé mes 
 Aujourd'hui a essentiellement été une journée de mise-à-niveau sur C# et de tutoriaux sur internet. J'ai maintenant un menu fonctionnel et des transitions smooth entre deux scènes et un menu.
 ![image](doormenu01.PNG)
 
-## 9.0 10/19/17 11:00
+## 9.0 19/10/17 11:00
 
 ### DOORS SHORTLIST
 
@@ -67,7 +87,7 @@ Aujourd'hui a essentiellement été une journée de mise-à-niveau sur C# et de 
 **innaccessible**
 * la porte est ouverte, mais innaccessible
 
-## 8.0 10/18/17 18:44
+## 8.0 18/10/17 18:44
 
 J'ai recommencé tantôt la scène de mon open field. Étant donné que j'ai dû tout recommencer, j'ai fait quelques modifs sur cette nouvelle version.
 
@@ -95,7 +115,7 @@ Mes questionnements:
 * Chaque direction devrait représenter quelque chose, et ce "quelque chose" devra être représenté quelque part entre la navigation du joueur et son processus de choix.
 
 
-## 7.0 10/18/17 16:27
+## 7.0 18/10/17 16:27
 
 J'ai ma première scène fonctionelle pour Portes.
 ![image](door01.png)
@@ -108,7 +128,7 @@ Aussi, mon legokit SUCK. Faut je trouve des alternatives. Pas chères. Genre vra
 
 
 
-## 6.0 10/16/17
+## 6.0 16/10/17
 
 Aujourd'hui m'est arrivée une plaie que j'avais depuis longtemps prise comme était chose du passé. J'ai eu un gitfuck et j'ai perdu une journée de travail. Ça inclut la map et toute les images documentant mon travail. Je dois définitivement prendre du temps pour lire de la doc sur git et mieux comprendre ses rouages, parce que c'est la plus cruelle ironie que je perde tout mon travail en utilisant du version control.
 
