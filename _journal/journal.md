@@ -1,3 +1,15 @@
+## 12.0 27/10/17 19:21
+
+J'ai plusieurs pistes quant à la suite.
+
+![img](spawn02.PNG)
+J'me suis mis dans la tête que j'aimerais avoir une TV dans le jeu. Pour faire quoi? Je sais pas encore. Briser le 4e mur en expliquant les enjeux? Shouter du nonsense? Ou cryptiquement afficher le progrès: genre simplement afficher 0/10, sans expliquer ce qu'il y a à ramasser; juste de quoi pour piquer le nerf achiever à certains...
+
+![img](fog0001.PNG)
+Du brouillard! Mapper la densité à la progression du joueur dans l'environnement? Ça signifierait que plus tu progresses, plus tu te perds, en fait. C'est un peu nihiliste comme vision. Peut-être que le brouillard pourrait être associé au timer. La métaphore serait alors moins associée aux actions / intentions, mais plus au temps.
+
+![img](house01.PNG)
+J'ai cette idée latente de faire commencer le joueur dans un salon. La TV est là, et saurait quémander l'attention du joueur pendant les 60 secondes. À tout moment, le joueur pourrait kick down la porte et sortir sur le champs ouvert. J'aime bien cette idée de tenter de garder le joueur enfermé. Ce serait un clin d'oeil à la métaphone de la caverne de Platon.
 
 ## 11.0 27/10/17 19:21
 
