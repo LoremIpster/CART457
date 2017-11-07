@@ -25,7 +25,7 @@ public class Timer : MonoBehaviour {
 
 		controller = GetComponent<CharacterController> ();
 		fpController = GetComponent<FirstPersonController> ();
-		timerText.text = "Il ne te reste que " + timeRemaining.ToString("N0") + " secondes à vivre.";
+		timerText.text = "Il ne te reste que " + timeRemaining.ToString("N0") + " secondes.";
 	}
 	
 	// Update is called once per frame

@@ -2,7 +2,7 @@
 
 J'ai plusieurs pistes quant à la suite.
 
-![img](spawn02.PNG)
+![](spawn02.PNG)
 J'me suis mis dans la tête que j'aimerais avoir une TV dans le jeu. Pour faire quoi? Je sais pas encore. Briser le 4e mur en expliquant les enjeux? Shouter du nonsense? Ou cryptiquement afficher le progrès: genre simplement afficher 0/10, sans expliquer ce qu'il y a à ramasser; juste de quoi pour piquer le nerf achiever à certains...
 
 ![img](fog0001.PNG)
