@@ -1,3 +1,39 @@
+## 14.0 20/11/17 11:35
+
+
+## 13.0 17/11/17 5:55
+Je vais résister à l'envie d'écrire sur le temps qui me manque et mes cours de BFA qui me drainent l'entièreté de mon temps, alors je vais tout de suite sauter dans le sujet.
+
+Openfield, aka 60 secondes, aka Il ne te reste qu'une minute à vivre, est _à peu près_ terminé. _À peu près_ car je crois avoir trouvé le centre de mon message (notre désir automatique d'agir face au temps) qui est passablement est exprimé dans le prototype. _À peu près_ parce que chaque feature, chaque idée n'a pas vraiment pu être poussée jusqu'au bout.
+
+J'ai beaucoup travaillé sur l'optimisation et sur certains détails qui m'intéressaient dans l'environnement (comme le chemin central, ou le ravin derrière le joueur).
+
+Une des dernières modifications majeures apportée à l'environnement est d'avoir étendu la forêt partout. J'ai coupé la montagne pour standardiser ce qui n'était pas lié au chemin principal.
+
+Avant
+![](topview_mountain.PNG)
+
+Après
+![](topview_nomountain.png)
+
+Cette décision m'a à priori semblée paresseuse. Enlever la montagne et rajouter la  forêt m'a pris un gros 30 secondes à faire dans la nouvelle version, alors que de simpler _créer_ la montagne m'avait pris une soirée entière.
+
+Je trouve que la différence est plus frappante vue de la perspective du joueur.
+
+Avant
+![](spawn03.PNG)
+
+Après
+![](spawn04.PNG)
+
+Tout ça symbolise cependant un des réflexes constant de ma progression dans ce prototype, qui a été de progresser en soustrayant. C'est un principe limite cliché ("minimalist design", blabla) qui reste toutefois très difficile à appliquer. Du moins en ce qui me concerne; c'est facile de se dire que son jeu n'est "pas assez", de conclure que ça "manque de gameplay" et que la solution réside manifestement dans l'ajout de contenu.
+
+C'est donc le retrait du contenu - ou carrément le retrait d'information - qui a mis de côté tout ce bruit qui était certes intéressant, mais qui ajoutait de la confusion au concept.
+
+En surface, je crois que l'attrait de ce projet réside sur le mystère et la curiosité: _qu'est-ce qui se passe après 60 secondes? qu'est-ce qui se trouve au bout du chemin? je cherche quelque chose dans la forêt, mais quoi? est-ce que je peux revenir en arrière?_
+
+Ce sont ces questions qui sont importantes plus que les réponses. C'est le "firstness" de la prémisse du jeu et la réponse émotionelle qu'on ressent lorsqu'on se fait donner une pression sévère de temps: l'anxiété de faire (ou atteindre) quelque chose avant qu'il ne soit trop tard; le FOMO lié à l'exploration; l'incapacité de ne rien faire. L'intérieur brut du joueur passe par ces décisions peu ou pas réfléchies, et c'est de là que sort toute la beauté d'un jeu.
+
 ## 12.0 27/10/17 19:21
 
 J'ai plusieurs pistes quant à la suite.
@@ -181,12 +217,12 @@ Après une lourde semaine de lecture / écriture derrière moi, j'ai embarqué 
 
 Toujours commencer par l'échelle macro. Dans ce cas, je devais m'assurer que l'espace navigable en l'espace d'une minute était assez restreint, tout en donnant une impression d'immensité. Les obélisques bleus me servent de guides.
 
-![image](m2.png)
+![](m2.png)
 
 
 Derrière le spawnpoint se trouve un billboard (qui n'affiche encore rien). Le plan est de lui faire "dire" du nonsense pendant une minute. Derrière se trouve un ravin dans lequel on peut se jeter.
 
-![image](m3.png)
+![](m3.png)
 
 
 Les pierre tombales illustrent un concept que j'ai en tête qui s'apparente en fait à Orchids to Dusk. Chaque playthrough laisserait une trace, soit un corps, une tombe, etc. J'aime beaucoup l'idée de voir le "data" des morts être affiché.

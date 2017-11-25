@@ -13,7 +13,7 @@ public class Stillness : MonoBehaviour {
 	}
 	
 	void FixedUpdate () {
-		Debug.Log (rb.velocity);
+		//Debug.Log (rb.velocity);
 		if (rb.velocity.x == 0 && rb.velocity.z == 0) {
 			Debug.Log ("vel is " + vel);
 		} else if (vel.x > 0 && vel.y > 0){

@@ -11,51 +11,73 @@ public class Timer : MonoBehaviour {
 
 	private float xPos;
 	private float zPos;
+	private float timeStill;
+	private bool songPlaying = false;
 
 	public float timeRemaining = 60;
-	public Text gameOverText;
 	public Text timerText;
+	public GameObject music;
+	//public SphereCollider startTrigger;
 
 
-
-	// Use this for initialization
 	void Start () {
 		xPos = transform.position.x;
 		zPos = transform.position.z;
 
 		controller = GetComponent<CharacterController> ();
 		fpController = GetComponent<FirstPersonController> ();
+		//startTrigger = GetComponent<SphereCollider> ();
+
 		timerText.text = "Il ne te reste que " + timeRemaining.ToString("N0") + " secondes.";
 	}
 	
-	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		if (xPos != transform.position.x || zPos != transform.position.z) {
+			timeStill = 0;
+
 			timeRemaining -= Time.deltaTime;
-			timerText.text = "Il ne te reste que " + timeRemaining.ToString("N0") + " secondes à vivre.";
+			timerText.text = "Il ne te reste que " + timeRemaining.ToString ("N0") + " secondes.";
 
 			xPos = transform.position.x;
 			zPos = transform.position.z;
 
-			if(timeRemaining <= 0){
-				gameOverText.text = "c'est fini";
+			if (timeRemaining <= 0) {
 				timerText.enabled = false;
 				controller.enabled = false;
 				fpController.enabled = false;
 			}
-		}
-	}
-
-	// for debug only
-	void OnGUI(){
-	
-		if (timeRemaining > 0) {
-			//GUI.Label (new Rect (100, 100, 200, 100), "Time Remaining : " + timeRemaining);
-		//	timerText.text = "Il ne te reste que " + timeRemaining + "secondes à vivre.";
 		} else {
-			//GUI.Label (new Rect (100, 100, 100, 100), "Time's up!");
+			
+
+			timeStill += Time.deltaTime;
+			Debug.Log (timeStill);
+
+			if (timeStill >= 15) {
+				playSong ();
+			}
 
 		}
-
 	}
+
+//	void OnCollisionEnter (Collision col){
+//		if(col.gameObject.name == startTrigger)
+//		{
+//			Debug.Log ("INSIIIIIDE");
+//		}
+//
+//	}
+
+	void playSong(){
+		
+		if (songPlaying == false) {
+			music.GetComponent<AudioSource> ().Play ();
+			songPlaying = true;
+		} else {
+			//music.GetComponent<AudioSource>().Stop();
+			//songPlaying = false;
+		}
+	}
+
+
+
 }
