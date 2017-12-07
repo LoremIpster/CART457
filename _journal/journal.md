@@ -1,4 +1,78 @@
-## 14.0 20/11/17 11:35
+## 14.0 07/12/17 12:53
+Vingt jours se sont passés depuis mon dernier log. Passé le premier jeu prévu pour ce independent study, j'ai eu une perte quasi-instantanée de momentum.
+
+Mon deuxième jeu, codenamed _Doors_, a été une épide dans mon pied en ce dernier mois de la session d'automne. J'ai pris la décision, le weekend dernier, de l'abandonner, car travailler dessus devenait contre-productif. Au final, j'aurai eu deux débuts de jeu qui n'auront pas abouti, et je suis maintenant parti sur une troisième idée (parce que tsé, faut ben que j'arrive avec quelque chose au final).
+
+### Idée I - le choix binaire
+L'idée de base de _Doors_ était centrée autour de mon concept d'_embranchement expressif_: Donner un choix au joueur qui ne résulte non pas (forcément) en une conséquence, mais en plutôt une nuance reflétant sa propre personne.
+
+En d'autres mots: le meaning venait de la décision même du joueur, et non de la conséquence dudit choix.
+
+Je me suis donc dit que j'allais faire une succession de salles épurées présentant un choix binaire.
+![image](proto1_1.jpg)
+
+J'étais intéressé à une sorte de succession rapide de sitaution où le joueur doit choisir entre deux choses, sans contexte : une petite porte et une grande porte. Une porte illuminée et une porte assombie, etc.
+
+L'idée ressemblait un peu à _Foire aux questions_, un jeu que j'ai créé l'an dernier.
+![image](faq01.png)
+
+Un jeu avec aucun _branching_; chaque choix ne fait que faire progresser la trame linéaire du jeu. Cependant, j'aimais beaucoup voir ce que le joueur allait choisir pour se rendre jusqu'au bout. Certains choix (utilisant parfois des termes intimes ou ambigües) laissaient les joueurs hésiter. Et c'est à travers ces moments que l'expression du joueur se ressentait.
+
+Finalement: cul-de-sac. J'étais peu à l'aise avec ce choix parce qu'il me semblait trop axé sur The Stanley Parable. Je n'étais capable de citer que ce jeu en exemple et j'avais un mal fou à trouver de nouveaux choix intéressants.
+
+### Idée II - la porte comme métaphore
+J'ai ensuite fait volte-face pour explorer, sans intention précise, différentes interactions qu'on pourrait avoir face à une porte. Considérant le jeu dans le frame du "walking simulator", j'me suis dit qu'est-ce que je pourrais exprimer selon la position / orientation du joueur, et le désir de passer du point A au point B?
+
+J'ai rempli une page et demie de portes avec différentes options.
+![](p01.png)
+
+Quelques exemples:
+* une porte qui ne s'ouvrait que lorsque le joueur ne regardait pas
+* une porte qui était franchissable que lorsqu'on entrait à reculon en elle
+* une porte qui s'ouvrait que lorsque le joueur abandonnait (retournait sur ses pas, ou ouvrait le menu)
+* une porte qui s'ouvrait sur un mur de briques
+* une porte qui se fermait à mesure que le joueur s'approchait d'elle
+* une porte qui s'ourait à mesure que le joueur s'éloignait d'elle
+* une porte grande ouverte et des contrôles mélangés
+* une porte grande ouverte et la vitesse du joueur qui ralentis au fur et à masure qu'il s'en approche
+
+Le but était de créer un jeu via un processus _bottom-up_: avoir plusieurs idées d'interaction et de mécanique, et ensuite créer un contexte pour rattacher le tout.
+
+J'avais donc toutes ces mécaniques, éparpillées, sans élément central. Je ne voulais pas présenter ces mécaniques sans aucun contexte, car je crois que le jeu aurait perdu une grande partie de son potentiel évocateur. J'ai longtemps pensé associer des étapes de ma vie amoureuse (souvent récurrente dans mes thèmes), pour donner un plus grand potentiel de métaphore aux portes, mais la connexion entre cette idée high level avec ces mécaniques low-level était toutefois trop faible.
+
+Et puis voilà, j'ai rien trouvé de mieux. Il faut dire qu'à ce moment, j'étais enterré dans une pluie de travaux finaux qui faisaient en sorte que le brainstorm de solutions n'était pas efficace.
+
+### Idée III - freestyle de portes
+À court de solution, avec une deadline qui se rapprochait dangereusement, j'ai décidé de pivoter et de changer d'engin. Je suis revenu vers unreal, sachant que mon aisance technique allait m'aider à essayer autre chose.
+
+J'ai décidé de _freestyler_. Créer une succession de salles, n'importe quoi, avec ou sans portes, et voir ce que ça donne. Je suis parvenu à un fini visuel particulier (wireframe sur background pastel) et j'ai créé une petite succession de salles.
+![](unrealdoors.png)
+
+Je désirais simplement créer quelque chose d'instinctif. Une succession de mots, de couleurs, et d'espaces abstraits, comme une pièce musicale qui n'a pas de "sens", mais qui transporte émotionellement.
+
+J'ai fait un premier prototype qui s'est bien passé. L'expérience dure une minute. Le joueur passe d'une pièce à l'autre, dans des salles vides ponctuées de texte du genre "ouvre-moi", ou "suis-moi" et autres injonctions cryptiques. Je trouvais l'expérience agréable, mais je voyais aussi que c'était surtout un exercice de style, avec peu de substance au final. C'est le genre de projet que je me verrais continuer dans mon temps libre, mais dans le cadre d'un independent study, j'aurais été embêté d'analyser ce niveau.
+
+Case départ à nouveau. J'avais besoin d'un message. Une idée qui allait frapper mon imagination au sujet du level design d'auteur.
+
+### Idée IV - l'apartement
+Toute cette timeline mène à aujourd'hui. Je suis à nouveau parti sur quelque chose de nouveau.
+![](apartment01.jpg)
+
+Je veux créer un espace qui se désintègre. Tranquillement, et sans aucune issue.
+
+Je veux partir d'un espace réaliste; illusoire. Une pièce immersive, et convaincante qui perd tranquillement de sa façade.
+
+Je veux recycler du contenu: la pièce en question est une démo intitulée "realistic rendering", fait par Epic Games. Je veux infuser un message à cette pièce qui, autrement, n'est qu'un showoff de technologie.
+
+En ce sens, je veux lancer un message sur les limites du médium. Et l'acceptance de ces limites. Cet espace parfait et convainquant qui, peu à peu, perd ses textures, ses lumières, ses objets pour ne finalement devenir qu'une coquille vite. Et même cette coquille finirait par disparaître, jusqu'à ce que le joueur soit isolé sur un plancher, qui disparaîtrait également, laissant suite à une chute sans fin.
+
+Cette pièce n'était au final qu'un cube flottant dans le vide.
+
+Cette idée me ramène aux écrits de Clement Greenberg sur les courants romantique, impressioniste et cubiste en peinture, et de l'acceptation des limites du médium. Pourquoi cette course à l'illusion? Outre le potentiel d'immersion et de divertissement, j'y vois une perversion du médium, et d'un déni de ses limites. Un jeu est virtuel. Un jeu est un ensemble de mécaniques créant une dynamique avec la participation d'un joueur. Un jeu n'est pas vrai.
+
+La semaine prochaine, je compte rajouter un script dans la salle qui va tranquillement faire disparaître le mobilier (et éventuellement les murs). Le script sera créé de sorte à ce que la "disparition" se fera toujours à l'insu du joueur (ex: pendant qu'il regarde ailleurs). Passé ce stade, je verrai ou est la prochaine étape.
+
+***
 
 
 ## 13.0 17/11/17 5:55
