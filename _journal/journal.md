@@ -1,3 +1,48 @@
+## 15.0 07/12/17 09:56
+J'ai terminé hier la première itération de mon deuxième jeu, codenamed DLP, en référence à Disintegration Loops, de Wiliam Basinsky.
+
+![](DLP03.png)
+Le joueur apparaît dans une pièce, un apartement cossu, la nuit, sobrement éclairé. Du mobilier nanti orne la petite pièce, flanquée de trois portes non-traversable. La pièce est immobile, et il est simplement possible de marcher dans la pièce.
+
+Lentement, mais sûrement, des changements se produisent. La pièce devient de plus en plus vide. La table disparaît, puis les étagères, puis le reste du mobilier. L'apartement ne devient bientôt que quatre murs. Ces même quatre murs disparaîssent écentuellement, laissant le joueur au milieu du vide, sur un plancher flottant. le plafond et le plancher, à leur tour, finissent par disparaître.
+
+Ce jeu est basé sur quatre différentes intentions de ma part.
+![](DLP04.png)
+
+### Désintégration
+Ce prototype est en fait une idée de jeu que j'ai depuis deux ans. J'ai souvent imaginé un endroit qui se décompose graduellement, d'abord à l'insu du joueur, pour ensuite capter toute son attention, à force de lui forcer un vide grandissant.
+
+J'aime la portée de cette esthétique. Quelque chose de parfait / ordonné / authentique qui s'effrite et qui confronte le joueur. Il y a quelque chose de puissant dans l'idée d'une pièce vide, et encore plus face au noir abyssal (anglais: void) qui entoure TOUS les niveaux de TOUS les jeux. Il y a une thématique de mort inévitable qui en ressort, et je crois que cet état anxiogène peut avoir des vertus cathartiques lorsqu'amené avec une bonne gradation.
+
+Parlant du void, je réalise être très attiré par cette esthétique. Le void est la matière première d'un niveau et est caché à tout prix par les développeur, sous peine de briser le quatrième mur. Ça m'a rappelé cet article de [Killscreen](https://killscreen.com/articles/voidscapes/) qui fait référence à des _voidscapes_, ces endroits de vide qui révèlent la nature d'un univers numérique. Je crois que je pourrais écrire un essai entier juste sur le noir qui entoure le niveau.
+
+### Recyclage
+La scène n'a pas été créé par moi. Son nom original est "Realistic Rendering" et est une scène "test" créée en 2014 par Epic Games pour démontrer certaines nouvelles capacité de rendu de l'engin. Cette scène m'attire depuis longtemps, et je crois que c'est parce qu'elle n'a pas été concu pour un jeu. Présentée comme un rendu architectural, elle ne sert qu'à être regardée, et appréciée, comme une voiture expérimentale rutilante et immobile dans un salon d'auto. Inutile, mais attrayante. Y insérer un jeu en ne touchant a rien d'autre que le code a quelque chose de subversif; une scène qui n'est pas un jeu est devenue le terrain parfait pour y insérer un (non-)jeu, critiquant sa nature même.
+
+Pouvoir (et savoir) remixer cette scène était aussi important pour moi d'une perspective de développeur solo. Étant concepteur de niveau, je ne peux créer mes propres assets, et je dois avoir l'oeil ouvert sur du matériel existant pour savoir comment le remixer selon ma propre esthétique. Cette scène avait quelque chose de "neutre", avec une pureté qui pourrait s'apparenter à un morceau de musique "traditionnel" (par exemple, quelques notes de piano, ou un accord catchy de guitar) qui s'insèrerait facilement dans n'importe quel genre de musique.
+
+Avoir un flair pour des bons samples est définitivement un skill que je dois peaufiner dans mes prochains jeux et, en ce sens, ce prototype est un franc succès.
+
+### Illusion
+Un autre aspect attirant de cette scène est son photoréalisme. L'intention derrière cette scène est de bluffer son spectateur et de lui faire croire que la scène est en fait une photo. Dans un contexte de rendus architecturaux, je crois qu'on pourrait considérer ce test comme une réussite, mais j'ai pour ma part un malaise grandissant en ce qui concerne le photoréalisme. Nous sommes à un point où le bluff entre le numérique et la réalité est très proche, nous plaçant beaucoup plus souvent qu'autrement dans la uncanny valley.
+
+Je suis écoeuré de tous ces jeux qui essaient de faire comme la réalité. Je vois difficilement quelque chose de plus superficiel qu'un jeu qui se dit basé sur la réalité dans son rendu, mais qui comporte un gameplay qui se limite à des guns, des chars, du sport et autre power fantasies. À quand des _thématiques_ basées sur la réalité? Sur l'expérience humaine? Sur nos peurs et désirs?
+
+Outre la thématique, cette scène me fait penser à _Toward a Newer Laocoon_ de Clement Greenberg. Dans cet essai, l'auteur illustre que la peinture romantique est obsédée par la littérature. Le romantisme essaie de copier la narrativité, les sujets et les thèmes de la littérature en plus de chercher par-dessus tout à bluffer le spectateur avec un réalisme poignant et émotionnel.
+
+Il y a déjà tant d'insultes face au médium de la peinture, souligne-t-il. D'abord, le romantisme n'accepte pas les limites du médium (un canevas, des couleurs, des formes) mais cherche à "faire comme" un autre. De plus, toutes ces avancées techniques ne servent qu'à entretenir une illusion de "réalisme" qui ne confirme que la superficialité de l'oeuvre.
+
+Un jeu photoréaliste porte cette même dissonance, selon moi. Mon prototype vandalise cette scène autrement parfaite, et expose les limites de cette-ci: oui, elle est bluffante dans ses détails, mais hop, tu vois? ce n'est pas une ville à l'extérieur, ce sont des panneaux et hop, tu vois ça aussi? la scène n'est pas dans un bloc, elle flotte dans le vide.
+
+### Level design
+Finalement, je tenais à faire ce prototype dans le cadre de ma recherche indépendante dû à son rattachement au level design. Toutes mes modifications sont portées selon le comportement du joueur et selon l'environnement qui l'entoure.
+
+* Toutes les modifications sont (pour l'instant) exclusivement basées sur l'environnement.
+* Le rythme est activé selon le mouvement du joueur. Immobile, rien ne se passe. Tant qu'il marche, la pièce continuera à se désintégrer.
+* La disparition se fait par rapport à l'orientation du joueur. Selon son point de vue, il ne verra jamais quoi que ce soit disparaître.
+
+![](DLP01.png)
+
 ## 14.0 07/12/17 12:53
 Vingt jours se sont passés depuis mon dernier log. Passé le premier jeu prévu pour ce independent study, j'ai eu une perte quasi-instantanée de momentum.
 
