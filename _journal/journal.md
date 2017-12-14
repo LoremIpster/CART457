@@ -1,8 +1,25 @@
+## 16.0 14/12/17 15:43
+_"How do I build a scene that reveals my character?"_
+
+J'écrivais cette phrase dans mes notes le 27 octobre 2017. J'ai commencé cette recherche indépendante sur un genre de coup de tête, avec l'intention d'explorer ce que ça voulait dire d'être un concepteur de niveaux de profession qui crée en tant qu'auteur.
+
+De plus en plus, je constate que mon chemin est celui d'un développeur solo (aka un artiste? je sais pas), peut-être avec collaboration externe, peut-être sans. Je constate aussi que, contrairement à ce que je craignais autrefois, je n'aurai pas à changer de métier. Je suis un concepteur de niveau, une discipline traditionellement basée sur du travail d'équipe, mais appliquée sur des projets individuels. Tous mes autres skills viennent supporter cette discipline qui m'est désormais centrale.
+
+Aujourd'hui, la session est finie. Je suis épuisé. Satisfait, par contre. Définitivement satisfait. J'ai produit deux prototypes pendant cette session (en plus de plusieurs autres fausses-couches).
+
+Le premier jeu utilise une scène minimale et dénudée. Un chemin droit, des forêts avoisinantes, un ravin. Et un timer. Le deuxième jeu se déroule dans une minuscule salle recyclée, dans laquelle seulement un système a été designé. Dans les deux cas, je me sers de la scène comme véhicule principal de mon message.
+
+Les deux termes que je retiens sont l'embranchement expressif et la projection architecturale. Le premier concerne une nuance ou une esthétique qui ressort selon le choix du joueur; un choix peut-être sans conséquence, mais peut certainement faire ressortir la nature du joueur. Le deuxième juxtapose contexte et géométrie, dans laquelle un forme peut trouver un signifiant différent selon la perspective utilisée.
+
+Mes prochains jeux vont continuer sur cette lancée. Je n'ai pas encore de fil conducteur très précis mais j'ai souvent le même feedback qui revient. mon jeu fait penser à The Beginner's Guide. Mes jeux sont de type horreur (!). Mes jeux ne sont en fait pas vraiment des jeux.
+
+Looking forward, je dois finir ces prototypes (ajouter menus, etc.) et les publier, et partir sur mes prochaines idées. Et je crois bien conserver ce journal, que je continuerai l'an prochain.
+
 ## 15.0 07/12/17 09:56
 J'ai terminé hier la première itération de mon deuxième jeu, codenamed DLP, en référence à Disintegration Loops, de Wiliam Basinsky.
 
 ![](DLP03.png)
-Le joueur apparaît dans une pièce, un apartement cossu, la nuit, sobrement éclairé. Du mobilier nanti orne la petite pièce, flanquée de trois portes non-traversable. La pièce est immobile, et il est simplement possible de marcher dans la pièce.
+Le joueur apparaît dans une pièce, un apartement cossu, la nuit, sobrement éclairé. Du mobilier nanti orne la petite pièce, flanquée de trois portes non-franchissables. La pièce est immobile, et il est simplement possible de marcher dans la pièce.
 
 Lentement, mais sûrement, des changements se produisent. La pièce devient de plus en plus vide. La table disparaît, puis les étagères, puis le reste du mobilier. L'apartement ne devient bientôt que quatre murs. Ces même quatre murs disparaîssent écentuellement, laissant le joueur au milieu du vide, sur un plancher flottant. le plafond et le plancher, à leur tour, finissent par disparaître.
 
@@ -69,7 +86,7 @@ Finalement: cul-de-sac. J'étais peu à l'aise avec ce choix parce qu'il me semb
 J'ai ensuite fait volte-face pour explorer, sans intention précise, différentes interactions qu'on pourrait avoir face à une porte. Considérant le jeu dans le frame du "walking simulator", j'me suis dit qu'est-ce que je pourrais exprimer selon la position / orientation du joueur, et le désir de passer du point A au point B?
 
 J'ai rempli une page et demie de portes avec différentes options.
-![](p01.png)
+![](p01.jpg)
 
 Quelques exemples:
 * une porte qui ne s'ouvrait que lorsque le joueur ne regardait pas
@@ -348,12 +365,12 @@ Les pierre tombales illustrent un concept que j'ai en tête qui s'apparente en f
 
 J'ai fait une première passe de détails. À l'ouest, la forêt. Les montagnes à l'est. Le ravin au sud. Des rivières / lacs pour encadrer le parcours un peu plus.
 
-![image](m4.png)
+![](m4.png)
 
 
 J'aime l'idée d'avoir un lookout en hauteur comme option. C'est présentement possible de s'y rendre en 50 secondes, et de regarder de haut tout le reste de la map.
 
-![image](m5.png)
+![](m5.png)
 
 Je ne sais pas encore ce que je veux faire pour l'option forêt. J'aimerais peut-être y mettre une sihlouette de loin; avoir quelqu'un ou quelque chose qui ferait miroiter une possibilité d'interaction. Ou juste de la fumée? Juste piquer la curiosité du joueur.
 
@@ -508,7 +525,7 @@ Dear Esther utilise également un espace expressif, mais de façon très différ
 Tout est plus vague et ouvert à interprétation, mais l'environnement dépend tout autant du monologue du narrateur pour trouver l'ensemble de son potentiel esthétique. L'environnement (une île) se veut beaucoup plus réaliste, et c'est surtout à travers la mise-en-scène des éléments de l'île que la narration émane.
 
 ### 2.4 - Piliers
-De ces exemples resortent deux tendances sur lesquelles j'aimerais appuyer ma recherche.
+De ces exemples ressortent deux tendances sur lesquelles j'aimerais appuyer ma recherche.
 
 1.  embranchement expressif (_expressive branching_)
   * choix de parcours révélant un aspect ou une nuance chez le joueur
@@ -529,7 +546,7 @@ J'ai quitté l'industrie du jeu triple-A il y a de ça trois ans, après une dif
 
 Ce détachement se trouvait quelque part entre le jeu que je co-créais (et le message qu'il transportait) et qui j'étais en tant que créateur. En d'autres mots, je créais des expériences fun™, épiques™ et immersives™ qui se limitaient à être une contribution (bien rémunérée, au moins) à un produit de divertissement de masse.
 
-Si m'exprimer est ma priorité, je dois dans ce cas utiliser qui je suis comme source. Je dois trouver un certain reflet de moi relayé à une personne qui saurait s'y identifier, ou simplement être se sentir challengée par mon point de vue. Les expériences que je chercher à transmettre devraient ainsi être un relais entre moi et l'audience ou, pour emprunter les mots à McLuhan, une "extention" de qui je suis.
+Si m'exprimer est ma priorité, je dois dans ce cas utiliser qui je suis comme source. Je dois trouver un certain reflet de moi relayé à une personne qui saurait s'y identifier, ou simplement se sentir challengée par mon point de vue. Les expériences que je chercher à transmettre devraient ainsi être un relais entre moi et l'audience ou, pour emprunter les mots à McLuhan, une "extention" de qui je suis.
 
 Ce désir de s'exprimer ne devrait pas non plus être à sens unique. Le médium du jeu vidéo implique un dialogue où l'expression du joueur vient répondre à celle du créateur.
 
@@ -541,7 +558,7 @@ Le problème dans tout ça est que je ne maîtrise pas du tout mon métier à tr
 
 *How do I build a scene that reveals my character?*
 
-Depuis le moment où j'ai commencé à créer des jeux, cette question m'habite, et sera la case départ de ce projet de recherche. J'ai l'intention d'explorer les différentes avenues par lesquelles je peux m'exprimer, et prioriser l'espace et la mise-en-scène sur les systèmes. Je dis ça parce que pour bien des designers, la conception de mécaniques vient à priori. C'est seulement ensuite, étant donné que ces mécaniques se doivent être représentées, que vient ce devoir de créer un espace qui sert ces mécaniques. En ce qui me concerne, le processus est inversé. La scène me vient d'abord, et les mécaniques viennent ensuite renforcer l'expérience.
+Depuis le moment où j'ai commencé à créer des jeux, cette question m'habite, et sera la case départ de ce projet de recherche. J'ai l'intention d'explorer les différentes avenues par lesquelles je peux m'exprimer, et prioriser l'espace et la mise-en-scène sur les systèmes. Je dis ça parce que pour bien des designers, la conception de mécaniques vient à priori. C'est seulement ensuite, étant donné que ces mécaniques se doivent d'être représentées, que vient ce devoir de créer un espace qui sert ces mécaniques. En ce qui me concerne, le processus est inversé. La scène me vient d'abord, et les mécaniques viennent ensuite renforcer l'expérience.
 
 ### 1.3 - Vocabulaire
 
